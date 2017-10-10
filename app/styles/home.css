@@ -6,10 +6,9 @@
 
 .side-bar {
   font-family: 'Roboto', sans-serif;
-  font: red;
-  background-color: green;
+  background-color: lightgray;
   padding: 15px;
   width: 200px;
   height: 1000px;
-  text-align: right;
+  text-align: left;
 }
