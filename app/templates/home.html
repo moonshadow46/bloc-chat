@@ -1,8 +1,14 @@
 <main class="side-bar">
   <h1>Bloc Chat</h1>
+  <button ng-click="home.createRoom()">New Room</button>
   <section class="chat-rooms">
-    <div ng-repeat="room in roomList">
-      <p>{{ room.$value }}</p>
+    <div ng-repeat="room in home.roomList">
+      <p>
+        {{ room.$value }}
+        <button type="button" class="pull-right" ng-click="home.removeRoom(room)">
+          <span class="glyphicon glyphicon-remove" aria-hidden="true"></span>
+        </button>
+      </p>
     </div>
   </section>
 </main>
