@@ -1,6 +1,7 @@
 (function() {
-  function HomeCtrl($uibModal, Room){
+  function HomeCtrl($uibModal, Room, Message){
     this.roomList = Room.all;
+    this.messages = null;
 
     this.createRoom = function(){
       $uibModal.open({
@@ -14,9 +15,12 @@
       // var nameOfRoom = prompt("Name Your Room");
       // Room.add (nameOfRoom);
     };
+    this.selectRoom = function (room){
+      this.messages = Message.getByRoomId(room.$id);
+    };
   }
 
   angular
     .module('blocChat')
-    .controller('HomeCtrl', ['$uibModal', 'Room', HomeCtrl]);
+    .controller('HomeCtrl', ['$uibModal', 'Room', 'Message', HomeCtrl]);
 })();

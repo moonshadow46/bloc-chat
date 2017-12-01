@@ -2,13 +2,16 @@
   <h1>Bloc Chat</h1>
   <button ng-click="home.createRoom()">New Room</button>
   <section class="chat-rooms">
-    <div ng-repeat="room in home.roomList">
-      <p>
-        {{ room.$value }}
-        <button type="button" class="pull-right" ng-click="home.removeRoom(room)">
-          <span class="glyphicon glyphicon-remove" aria-hidden="true"></span>
-        </button>
-      </p>
+    <p ng-repeat="room in home.roomList">
+      <span ng-click="home.selectRoom(room)">{{ room.$value }}</span>
+      <button type="button" class="pull-right" ng-click="home.removeRoom(room)">
+        <span class="glyphicon glyphicon-remove" aria-hidden="true"></span>
+      </button>
+    </p>
+  </section>
+  <section class="messages">
+    <div ng-repeat="message in home.messages">
+      <span class="message-username">{{ message.username }}</span> : {{ message.content }}
     </div>
   </section>
 </main>
