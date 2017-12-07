@@ -1,3 +1,8 @@
 .message-username {
   font-weight: bold;
+  font-size: 13pt;
+}
+
+.message-msg {
+  font-size: 13pt;
 }

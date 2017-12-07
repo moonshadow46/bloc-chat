@@ -1,7 +1,7 @@
-<main class="side-bar">
-  <h1>Bloc Chat</h1>
-  <button ng-click="home.createRoom()">New Room</button>
-  <section class="chat-rooms">
+<main>
+  <h1 class="chat">Bloc Chat</h1>
+  <section class="side-bar">
+    <button ng-click="home.createRoom()">New Room</button>
     <p ng-repeat="room in home.roomList">
       <span ng-click="home.selectRoom(room)">{{ room.$value }}</span>
       <button type="button" class="pull-right" ng-click="home.removeRoom(room)">
@@ -11,7 +11,7 @@
   </section>
   <section class="messages">
     <div ng-repeat="message in home.messages">
-      <span class="message-username">{{ message.username }}</span> : {{ message.content }}
+      <span class="message-username">{{ message.username }}</span> : <span class="message-msg">{{ message.content }}</span>
     </div>
   </section>
 </main>

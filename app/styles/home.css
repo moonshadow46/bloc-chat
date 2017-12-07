@@ -11,8 +11,15 @@
   width: 200px;
   height: 1000px;
   text-align: left;
+  float: left;
 }
 
 .messages {
-  float: right;
+  padding-left: 50px;
+  float: left;
+}
+
+.chat {
+  text-align: center;
+  font-weight: bold;
 }
