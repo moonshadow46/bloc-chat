@@ -3,9 +3,6 @@
     this.ok = function() {
       Room.add(this.roomName);
       $uibModalInstance.close();
-
-      // work with the this.roomName property.
-      // this will talk to your Room service.
     };
     this.cancel = function(){
       $uibModalInstance.dismiss('cancel');

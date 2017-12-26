@@ -10,8 +10,14 @@
     </p>
   </section>
   <section class="messages">
-    <div ng-repeat="message in home.messages">
-      <span class="message-username">{{ message.username }}</span> : <span class="message-msg">{{ message.content }}</span>
+    <div ng-show="home.selectedRoom">
+      <h2> {{ home.selectedRoom.$value }}</h2>
+      <div ng-repeat="message in home.messages">
+        <span class="message-username">{{ message.username }}</span> : <span class="message-msg">{{ message.content }}</span>
+      </div>
+    </div>
+    <div ng-hide="home.selectedRoom">
+      Have Fun Chatting!!
     </div>
   </section>
 </main>

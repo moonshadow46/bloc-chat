@@ -2,6 +2,7 @@
   function HomeCtrl($uibModal, Room, Message){
     this.roomList = Room.all;
     this.messages = null;
+    this.selectedRoom = null;
 
     this.createRoom = function(){
       $uibModal.open({
@@ -16,6 +17,7 @@
       // Room.add (nameOfRoom);
     };
     this.selectRoom = function (room){
+      this.selectedRoom = room;
       this.messages = Message.getByRoomId(room.$id);
     };
   }

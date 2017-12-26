@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html ng-app="blocChat">
-<head lang="en">
+  <head lang="en">
     <meta charset="UTF-8">
     <title>Bloc Chat</title>
     <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
@@ -9,8 +9,8 @@
     <link rel="stylesheet" type="text/css" href="/styles/home.css">
     <link rel="stylesheet" type="text/css" href="/styles/normalize.css">
     <link rel="stylesheet" type="text/css" href="/styles/messages.css">
-</head>
-<body>
+  </head>
+  <body>
     <ui-view></ui-view>
 
     <!-- angular -->
@@ -36,10 +36,11 @@
     <!-- Bootstrap -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-bootstrap/2.5.0/ui-bootstrap-tpls.min.js"></script>
     <!-- application files -->
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular-cookies.js"></script>
     <script src="/scripts/app.js"></script>
     <script src="/scripts/services/Room.js"></script>
     <script src="/scripts/services/Message.js"></script>
     <script src="/scripts/controllers/HomeCtrl.js"></script>
     <script src="/scripts/controllers/ModalCtrl.js"></script>
-</body>
+  </body>
 </html>
