@@ -5,8 +5,9 @@
       $uibModal.open({
         backdrop: 'static',
         animation: true,
-        templateUrl: 'templates/setUsername.html',
-        controller: 'UserCtrl',
+        templateUrl: '../../templates/set-username.html',
+        controller: 'CookiesCtrl',
+        controllerAs: 'ctrl',
         size: 'medium'
         //Modal configuration object properties
       })
