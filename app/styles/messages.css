@@ -6,3 +6,9 @@
 .message-msg {
   font-size: 13pt;
 }
+
+#enter-message {
+  position: absolute;
+  bottom: 1rm;
+  left: 1rm;
+}

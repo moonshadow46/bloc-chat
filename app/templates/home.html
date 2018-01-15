@@ -19,5 +19,9 @@
     <div ng-hide="home.selectedRoom">
       Have Fun Chatting!!
     </div>
+    <div  class="enter-message">
+      <input placeholder="Enter your message" ng-model="newMessage.content" required type="text">
+      <button ng-model="updateCurrentRoom" type="button" class="btn btn-primary" ng-click="sendMessage()">Send</button>
+    </div>
   </section>
 </main>

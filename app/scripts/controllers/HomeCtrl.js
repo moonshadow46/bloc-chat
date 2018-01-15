@@ -6,8 +6,6 @@
 
     this.createRoom = function(){
       $uibModal.open({
-        // ariaLabelledBy: 'modal-title-top',
-        // ariaDescribedBy: 'modal-body-top',
         templateUrl: '../../templates/new-room-modal.html',
         controller: "ModalCtrl",
         controllerAs: "ctrl"
