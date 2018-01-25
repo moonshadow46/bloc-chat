@@ -15,13 +15,14 @@
       <div ng-repeat="message in home.messages">
         <span class="message-username">{{ message.username }}</span> : <span class="message-msg">{{ message.content }}</span>
       </div>
+      <form class="enter-message" ng-submit="home.sendMessage()">
+        <input placeholder="Enter your message" ng-model="home.newMessage" required type="text">
+        <button ng-model="updateCurrentRoom" type="submit" class="btn btn-primary">Send</button>
+      </form>
     </div>
     <div ng-hide="home.selectedRoom">
       Have Fun Chatting!!
     </div>
-    <div  class="enter-message">
-      <input placeholder="Enter your message" ng-model="newMessage.content" required type="text">
-      <button ng-model="updateCurrentRoom" type="button" class="btn btn-primary" ng-click="sendMessage()">Send</button>
-    </div>
+
   </section>
 </main>
